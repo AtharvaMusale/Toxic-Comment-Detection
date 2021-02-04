@@ -17,6 +17,7 @@ Data contains three files-
 
 Data contains columns like id,comment_text and 0 or 1 value corresponding to each of the category <br> like toxic, severe_toxic, obscene, threat, insult, identity_hate
 
-# App Design Using Flask
+## App Design Using Flask
 I have also deployed my app using Flask and here is the view of it.
+<img width="1440" alt="Screenshot 2021-02-04 at 7 40 04 AM" src="https://user-images.githubusercontent.com/46114095/106846343-b4f43280-66d2-11eb-90f5-5cfd67e74e8d.png">
 
