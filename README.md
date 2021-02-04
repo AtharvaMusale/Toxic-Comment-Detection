@@ -19,5 +19,7 @@ Data contains columns like id,comment_text and 0 or 1 value corresponding to eac
 
 ## App Design Using Flask
 I have also deployed my app using Flask and here is the view of it.
+For non-toxic comments the predictions looked like this - 
 <img width="1440" alt="Screenshot 2021-02-04 at 7 40 04 AM" src="https://user-images.githubusercontent.com/46114095/106846343-b4f43280-66d2-11eb-90f5-5cfd67e74e8d.png">
-
+For some harsh comments the predictions looked like this - 
+<img width="1440" alt="Screenshot 2021-02-04 at 9 27 37 AM" src="https://user-images.githubusercontent.com/46114095/106846464-ea991b80-66d2-11eb-9325-ef714784f09e.png">
