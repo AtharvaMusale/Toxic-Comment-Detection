@@ -1,4 +1,7 @@
 # Toxic-Comment-Detection
+<img width="968" alt="Screenshot 2021-02-04 at 10 24 20 AM" src="https://user-images.githubusercontent.com/46114095/106846606-364bc500-66d3-11eb-977a-9e7e1f38cd2f.png">
+
+
 ## Problem statement -
 Discussing things you care about can be difficult. The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
 
