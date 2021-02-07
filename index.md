@@ -20,6 +20,16 @@ Data contains three files-
 
 Data contains columns like id,comment_text and 0 or 1 value corresponding to each of the category <br> like toxic, severe_toxic, obscene, threat, insult, identity_hate
 
+# Approaches taken For Solving This Porblem-
+* Logistic regression
+* Naive Bayes
+* Decision Trees
+* LightGBM
+* LSTM
+
+# Results - 
+I got the best results by Deep Learning LSTM approach. Followed by Ensemble of LightGBM and LSTM and LightGBM,Naive Bayes, Logistic regression, Decision Trees respectively.
+
 ## App Design Using Flask
 I have also deployed my app using Flask and here is the view of it.
 For non-toxic comments the predictions looked like this - 
