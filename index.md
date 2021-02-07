@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# Toxic-Comment-Detection
+<img width="968" alt="Screenshot 2021-02-04 at 10 24 20 AM" src="https://user-images.githubusercontent.com/46114095/106846606-364bc500-66d3-11eb-977a-9e7e1f38cd2f.png">
 
-You can use the [editor on GitHub](https://github.com/AtharvaMusale/Toxic-Comment-Detection/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Problem statement -
+Discussing things you care about can be difficult. The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
 
-### Markdown
+The Conversation AI team, a research initiative founded by Jigsaw and Google (both a part of Alphabet) are working on tools to help improve online conversation. One area of focus is the study of negative online behaviors, like toxic comments (i.e. comments that are rude, disrespectful or otherwise likely to make someone leave a discussion). So far they’ve built a range of publicly available models served through the Perspective API, including toxicity. But the current models still make errors, and they don’t allow users to select which types of toxicity they’re interested in finding (e.g. some platforms may be fine with profanity, but not with other types of toxic content).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+In this competition, you’re challenged to build a multi-headed model that’s capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate better than Perspective’s current models. You’ll be using a dataset of comments from Wikipedia’s talk page edits. Improvements to the current model will hopefully help online discussion become more productive and respectful.
 
-```markdown
-Syntax highlighted code block
+## Evaluation Metric - 
+Submissions are  evaluated on the mean column-wise ROC AUC. In other words, the score is the average of the individual AUCs of each predicted column.
 
-# Header 1
-## Header 2
-### Header 3
+## Data - 
+Data contains three files-
+* train.csv which is supposed to be used to train the models.
+* test.csv on which predictions should be made
+* sample_submission.csv in which all the predictions should be store and submitted on kaggle.
 
-- Bulleted
-- List
+Data contains columns like id,comment_text and 0 or 1 value corresponding to each of the category <br> like toxic, severe_toxic, obscene, threat, insult, identity_hate
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AtharvaMusale/Toxic-Comment-Detection/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## App Design Using Flask
+I have also deployed my app using Flask and here is the view of it.
+For non-toxic comments the predictions looked like this - 
+<img width="1440" alt="Screenshot 2021-02-04 at 7 40 04 AM" src="https://user-images.githubusercontent.com/46114095/106846343-b4f43280-66d2-11eb-90f5-5cfd67e74e8d.png">
+For some harsh comments the predictions looked like this - 
+<img width="1440" alt="Screenshot 2021-02-04 at 9 27 37 AM" src="https://user-images.githubusercontent.com/46114095/106846464-ea991b80-66d2-11eb-9325-ef714784f09e.png">
