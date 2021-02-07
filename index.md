@@ -20,7 +20,7 @@ Data contains three files-
 
 Data contains columns like id,comment_text and 0 or 1 value corresponding to each of the category <br> like toxic, severe_toxic, obscene, threat, insult, identity_hate
 
-# Approaches taken For Solving This Porblem-
+# Algorithms Used -
 * Logistic regression
 * Naive Bayes
 * Decision Trees
