@@ -1,3 +1,6 @@
+# You can check out my blog on GitHub on this site for this approach.
+https://atharvamusale.github.io/Toxic-Comment-Detection/
+
 # Toxic-Comment-Detection
 <img width="968" alt="Screenshot 2021-02-04 at 10 24 20 AM" src="https://user-images.githubusercontent.com/46114095/106846606-364bc500-66d3-11eb-977a-9e7e1f38cd2f.png">
 
